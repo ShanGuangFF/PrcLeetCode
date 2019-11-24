@@ -3,7 +3,7 @@ package RemoveRepeatNum;
 /**
  * @author cc_ff
  * @create 2019-11-19 下午11:02
- * @action
+ * @action123
  */
 public class removeDuplicates {
     public int solution(int [] nums){
