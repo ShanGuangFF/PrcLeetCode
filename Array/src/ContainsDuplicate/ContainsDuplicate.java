@@ -29,6 +29,7 @@ public class ContainsDuplicate {
         for (int i : nums) {
             set.add(i);
         }
+
         return set.size() == nums.length ? false : true;
     }
 
