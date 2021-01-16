@@ -2,7 +2,6 @@ package IntegerInversion;
 
 import org.junit.Test;
 
-import java.lang.invoke.VarHandle;
 
 /**
  * @author cc_ff
@@ -12,6 +11,6 @@ public class test {
     @Test
     public void test(){
         Solution solution = new Solution();
-        System.out.println(solution.reverse(123));
+        System.out.println();
     }
 }
