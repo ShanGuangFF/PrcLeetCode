@@ -30,4 +30,30 @@ public class Solution {
         return -1;
     }
 
+    //原地交换
+    public int findRepeatNumber_Swap(int[] nums){
+        if(nums == null && nums.length ==0){
+            return -1;
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            int j = nums[i];
+            if (j == nums[j]){
+                return j;
+            }
+
+            while(i != nums[i]){
+                if (j == nums[j]){
+                    return j;
+                }
+                nums[i] = nums[j];
+                nums[j] = j;
+            }
+
+
+        }
+        return -1;
+    }
+    //哈希表
+
 }

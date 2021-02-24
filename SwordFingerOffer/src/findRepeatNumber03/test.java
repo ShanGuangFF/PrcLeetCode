@@ -1,5 +1,9 @@
+package findRepeatNumber03;
+
 import findRepeatNumber03.Solution;
 import org.junit.Test;
+
+import java.util.Arrays;
 
 /**
  * @author cc_ff
@@ -10,7 +14,7 @@ public class test {
     @Test
     public void test(){
         int []nums = new int []{3,1,0,2,3};
-        int i = solution.findRepeatNumber_sort(nums);
+        int i = solution.findRepeatNumber_Swap(nums);
         System.out.println(i);
     }
 }
