@@ -10,7 +10,7 @@ import org.junit.Test;
 public class test {
     @Test
     public void test(){
-        int nums [] = {0,2,7,8,5};
+        int[] nums = {0,2,7,8,5};
         int target = 9;
         Solution solution = new Solution();
         int[] ints = solution.twoSum(nums, target);

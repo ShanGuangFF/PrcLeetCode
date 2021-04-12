@@ -7,10 +7,16 @@ package TowSum;
  */
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
+        int[] result = new int[2];
+
         int i = 0 ,j = 1;
         while(i < nums.length){
             if(nums[i] + nums[j] == target){
-                return new int[] {i,j};
+
+                result[0] = i + 1;
+                result[1] = j + 1;
+
+                return result;
             }else if(j == nums.length - 1){
 
                 ++i;
@@ -20,6 +26,28 @@ public class Solution {
                 ++j;
             }
         }
-        throw new RuntimeException();
+
+        return result;
+    }
+
+
+    /**
+     *
+     * @param
+     * @return
+     */
+    public static int[] solution(int[] nums){
+        int[] result = new int[nums.length];
+
+              int sum = 1;
+              for (int num : nums) {
+                  sum *= num;
+              }
+
+              for (int i = 0; i < nums.length; i++) {
+                  result[i] = sum / nums[i];
+              }
+
+              return result;
     }
 }

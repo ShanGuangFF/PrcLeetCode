@@ -6,6 +6,7 @@ import org.junit.Test;
 import java.util.Arrays;
 
 /**
+ * 找出数组中第一次出现重复的数字
  * @author cc_ff
  * @creat 2021-01-2021/1/17-1:03
  */
