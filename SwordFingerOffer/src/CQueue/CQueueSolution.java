@@ -8,7 +8,7 @@ import java.util.Stack;
  * @author cc_ff
  * @creat 2021-03-2021/3/4-15:28
  */
-public class CQueue_Solution {
+public class CQueueSolution {
 //    LinkedList<Integer> stackA,stackB;
 //    public CQueue_Solution(){
 //        stackA = new LinkedList<>();
@@ -29,7 +29,7 @@ public class CQueue_Solution {
 //    }
 
     Stack<Integer> stackA,stackB;
-    public CQueue_Solution(){
+    public CQueueSolution(){
         stackA = new Stack<>();
         stackB = new Stack<>();
     }
@@ -39,12 +39,15 @@ public class CQueue_Solution {
     }
 
     public int deleteHead(){
-        if(!stackB.empty())
+        if(!stackB.empty()) {
             return stackB.pop();
-        if (stackA.empty())
+        }
+        if (stackA.empty()) {
             return -1;
-        while (!stackA.empty())
+        }
+        while (!stackA.empty()) {
             stackB.push(stackA.pop());
+        }
         return stackB.pop();
     }
 }
